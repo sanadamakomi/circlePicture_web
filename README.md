@@ -13,4 +13,4 @@ docker run -it -p 3838:80 circle_picture:latest
 
 It can be visited by http://127.0.0.1/3838
 
-OR Run Container By [ShinyProxy](https://www.shinyproxy.io/).
+OR Run Container By [ShinyProxy](https://github.com/openanalytics/shinyproxy-shiny-for-python-demo).
