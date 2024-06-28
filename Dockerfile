@@ -10,10 +10,10 @@ COPY ./app.py .
 COPY ./circlePicture.py .
 COPY ./default.png .
 
-EXPOSE 80
+EXPOSE 53838
 
 # 工作目录
-CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:80", "-k", "uvicorn.workers.UvicornWorker"]
+CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:53838", "-k", "uvicorn.workers.UvicornWorker"]
 
 # 打包
 # docker build -t circle_picture:latest .
