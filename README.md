@@ -24,3 +24,8 @@ OR Run Container By [ShinyProxy](https://github.com/openanalytics/shinyproxy-shi
     port: 53838
     container-image: circle_picture
 ```
+
+
+# Update
+
+* 2024.08.19: add note.png
