@@ -9,6 +9,7 @@ WORKDIR /var/data
 COPY ./app.py .
 COPY ./circlePicture.py .
 COPY ./default.png .
+COPY ./note.png .
 
 EXPOSE 53838
 
