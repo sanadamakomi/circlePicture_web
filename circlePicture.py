@@ -92,3 +92,13 @@ class circlePicture:
             images = [Image.open(filename) for filename in imageFilenames]
             self.arrangeImagesInCircle(img, images)
             img.save(out_file)
+
+            """2-合并注释"""
+            img_w, img_h = img.size
+            img_w_note = int(round(img_w / 3, 0))
+            img_note = Image.open("note.png")
+            img_note = img_note.resize((img_w_note, img_w_note), Image.Resampling.LANCZOS)
+            img_new = Image.new("RGB", (pic_d + img_w_note, pic_d), (255, 255, 255))
+            img_new.paste(img_note, (0, img_h - img_w_note))
+            img_new.paste(img, (img_w_note, 0))
+            img_new.save(out_file)
