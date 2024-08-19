@@ -91,7 +91,6 @@ class circlePicture:
             img = Image.new("RGB", (pic_d, pic_d), (255, 255, 255))
             images = [Image.open(filename) for filename in imageFilenames]
             self.arrangeImagesInCircle(img, images)
-            img.save(out_file)
 
             """2-合并注释"""
             img_w, img_h = img.size
